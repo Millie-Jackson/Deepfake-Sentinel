@@ -1,0 +1,25 @@
+version: 2
+updates:
+  # GitHub Actions and workflow updates
+  - package-ecosystem: “github-actions”
+    directory: “/”
+    schedule:
+      interval: “weekly”
+
+  # Python production dependencies
+  - package-ecosystem: “pip”
+    directory: “/”
+    schedule:
+      interval: “weekly”
+    # If you use two requirements files, you can list them:
+    # open-pull-requests-limit: 10
+    # allow:
+    #   - dependency-type: “development”
+
+  # Python dev dependencies (flake8, pytest, etc.)
+  - package-ecosystem: “pip”
+    directory: “/”
+    schedule:
+      interval: “weekly”
+    allow:
+      - dependency-type: “development”
