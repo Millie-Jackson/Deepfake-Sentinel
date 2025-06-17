@@ -1,0 +1,5 @@
+# Local config
+config.yaml
+
+# MLflow local database or artifacts
+mlruns/
