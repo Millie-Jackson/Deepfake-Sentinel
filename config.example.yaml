@@ -1,0 +1,33 @@
+# config.example.yaml
+
+# MLflow tracking server (for experiment logging)
+mlflow:
+  tracking_uri: "http://localhost:5000"   # or your real MLflow server
+
+# Video Detection thresholds
+video_detection:
+  confidence_threshold: 0.8
+
+# Audio Detection thresholds
+audio_detection:
+  confidence_threshold: 0.7
+
+# Folder watcher
+folder_watcher:
+  watch_dir: "/path/to/watch"
+
+# Screen grabber
+screen_grabber:
+  capture_interval_sec: 1
+
+# Audio listener
+audio_listener:
+  sample_duration_sec: 1
+
+# Notification settings
+notifications:
+  enable_desktop: true
+
+# Docker / container settings (if any)
+docker:
+  image_prefix: "milliejackson/deepfake-sentinel"
