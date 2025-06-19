@@ -3,3 +3,6 @@ config.yaml
 
 # MLflow local database or artifacts
 mlruns/
+
+# Datasets
+data/
