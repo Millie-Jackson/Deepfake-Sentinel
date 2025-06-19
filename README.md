@@ -20,6 +20,20 @@ Below are the core MVP features and their current status (Sprint 1 in progress)
 - Streamlit dashboard for real-time alerts -> Planned
 - Dockerization & CI/CD pipeline setup ->  Planned
 
+# CI/CD
+### Continuous Integration (CI)
+Automatically runs on every push or pull request to main.
+- Checkout code
+- Install dependencies (from requirements.txt)
+- Lint the codebase (flake8 src tests)
+- Run unit tests (pytest)
+- Smoke-test notebooks or model-training scripts
+### Continuous Deployment/Delivery (CD)
+- Builds and packages your services once CI passes:
+- Builds Docker images for the Video and Audio FastAPI services
+- Pushes them to Docker Hub or GitHub Packages
+- Automates local “deploy” via docker-compose up in your CI pipeline for integration tests
+
 # 🛠 Post-MVP Feature Ideas
 
 - Detection Accuracy
