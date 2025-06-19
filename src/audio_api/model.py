@@ -1,4 +1,4 @@
-import mlflow
+
 
 def load_model():
     # TODO: fetch from MLflow registry
