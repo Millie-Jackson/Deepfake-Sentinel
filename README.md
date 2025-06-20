@@ -6,8 +6,9 @@ Deepfake Sentinel is a cross-modal desktop monitoring service that continuously 
 
 Below are the core MVP features and their current status (Sprint 1 in progress):
 
-- Initialize repo structure & CI templates (GitHub Actions for lint/test) -> In Progress
-- Configure local MLflow server & logging -> In Progress
+- Initialize repo structure & CI templates (GitHub Actions for lint/test) -> Complete
+- Configure local MLflow server & logging -> Complete
+- 
 - Data EDA & preprocessing notebooks (FaceForensics++ video) -> In Progress
 - Data EDA & preprocessing notebooks (ASVspoof audio) -> In Progress
 - 
