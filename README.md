@@ -49,3 +49,27 @@ Below are the core MVP features and their current status (Sprint 1 in progress)
 
 Feature ideas above are intended for v2.0 and beyond. The initial 3‑month MVP focuses on core detection, notifications, and dashboard functionality.
 
+# 📊 EDA Findings & Limitations
+
+## Sample Size Comparison
+
+50-frame sample: quick initial plot with visible dual peaks (~0–30 and ~150–220).
+
+200-frame sample: smoother but nearly identical distribution.
+
+500-frame attempt: crashed laptop (500 frames × ~6 MB each ≈ 3 GB), so limited to 200 frames for MVP.
+
+## Key Insights
+### Normalisation
+
+Contrast bias: Pixel intensities cluster around very dark (0–50) and very bright (150–220) ranges, with fewer mid-tones (80–120). This indicates high-contrast scenes dominate the dataset.
+
+std (Standard Deviation): quantifies spread of intensity values around the mean—a larger std means more variability in brightness.
+
+### Augmentation Strategy
+
+Random brightness/contrast jitter: during model training, apply random brightness shifts (e.g. ±20 %) and contrast adjustments (e.g. ±30 %) to simulate varied lighting and improve robustness.
+
+### Sampling Notes
+
+Representativeness: 200 frames sample ~6 % of videos. It aligns with smaller samples but may miss rare outliers; post-MVP we’ll batch-histogram larger subsets or full dataset.
