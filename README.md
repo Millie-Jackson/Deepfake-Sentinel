@@ -51,6 +51,8 @@ Feature ideas above are intended for v2.0 and beyond. The initial 3‑month MVP 
 
 # 📊 EDA Findings & Limitations
 
+![image](https://github.com/user-attachments/assets/b269bce6-1974-49d8-a559-bc838e8cf79c)
+
 ## Sample Size Comparison
 
 50-frame sample: quick initial plot with visible dual peaks (~0–30 and ~150–220).
